@@ -1,25 +1,17 @@
-name: rethinkdb
+name: rubymecab
 version: 0.0.1
-inherits: wercker/ubuntu12.04-webessentials@0.0.3
-type: service
+inherits: wercker/rvm
+type: main
 platform: ubuntu@12.04
-description: wercker box for rethinkdb an open source distributed database
+description: wercker box for ruby with mecab
 keywords:
-  - rethinkdb
-  - opensource
-  - noqsql
-  - database
-  - json
+  - ruby
+  - mecab
 packages:
-  - rethinkdb@1.6.1
+  - mecab
 script: |
-  sudo add-apt-repository ppa:rethinkdb/ppa -y
   sudo apt-get update -y
-  sudo apt-get install rethinkdb -y
-  sudo mkdir -p /etc/rethinkdb/instances.d
-  sudo -- sh -c "echo 'bind=all' > /etc/rethinkdb/instances.d/default.conf"
+  sudo aptitude install mecab -y
+  sudo aptitude install mecab-ipadic-utf8 -y
+  sudo aptitude install libmecab-dev -y
 env:
-  WERCKER_RETHINKDB_PORT: 28015
-  WERCKER_RETHINKDB_HOST: $$HOST$$
-  WERCKER_RETHINKDB_URL: $$HOST$$:28015
-  WERCKER_RETHINKDB_VERSION: "1.6.1"
