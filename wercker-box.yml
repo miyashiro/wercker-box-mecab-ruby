@@ -1,5 +1,5 @@
 name: rubymecab
-version: 0.0.1
+version: 0.0.2
 inherits: wercker/rvm@3.0.0
 type: main
 platform: ubuntu@12.04
