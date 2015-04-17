@@ -8,8 +8,8 @@ keywords:
   - ruby
   - mecab
 script: |
-  sudo add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ saucy universe multiverse"
-  sudo add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ saucy-updates universe multiverse"
+  sudo add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ trusty universe multiverse"
+  sudo add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ trusty-updates universe multiverse"
   sudo apt-get update -y
   sudo apt-cache showpkg mecab
   sudo apt-cache showpkg libmecab-dev
