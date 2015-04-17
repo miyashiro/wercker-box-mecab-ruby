@@ -13,6 +13,6 @@ script: |
   sudo apt-get update -y
   sudo apt-cache showpkg mecab
   sudo apt-cache showpkg libmecab-dev
-  sudo apt-get install mecab=0.996 -y
+  sudo apt-get install mecab=0.996-1.1 -y
   sudo apt-get install mecab-ipadic-utf8 -y
-  sudo apt-get install libmecab-dev=0.996 -y
+  sudo apt-get install libmecab-dev=0.996-1.1 -y
