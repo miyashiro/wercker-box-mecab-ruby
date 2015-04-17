@@ -1,4 +1,4 @@
-name: ruby-with-mecab
+name: rubymecab
 version: 0.0.1
 inherits: wercker/rvm
 type: main
