@@ -1,17 +1,14 @@
 name: rubymecab
 version: 0.0.1
-inherits: wercker/rvm
+inherits: wercker/rvm@3.0.0
 type: main
 platform: ubuntu@12.04
 description: wercker box for ruby with mecab
 keywords:
   - ruby
   - mecab
-packages:
-  - mecab
 script: |
   sudo apt-get update -y
   sudo aptitude install mecab -y
   sudo aptitude install mecab-ipadic-utf8 -y
   sudo aptitude install libmecab-dev -y
-env:
