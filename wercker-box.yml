@@ -9,6 +9,6 @@ keywords:
   - mecab
 script: |
   sudo apt-get update -y
-  sudo aptitude install mecab -y
-  sudo aptitude install mecab-ipadic-utf8 -y
-  sudo aptitude install libmecab-dev -y
+  sudo apt-get install mecab -y
+  sudo apt-get install mecab-ipadic-utf8 -y
+  sudo apt-get install libmecab-dev -y
